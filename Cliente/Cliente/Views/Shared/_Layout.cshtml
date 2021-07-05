@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="es-gt">
+<head>
+
+    <link rel="shortcut icon" type="image/ico" href="~/Login/Login.png">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    @RenderSection("Titulo", required: false)
+
+    <!--CSS-->
+    <link href="~/Content/css/materialize.min.css" rel="stylesheet" />
+    <link href="~/Content/css/shared.css" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    @RenderSection("CSS", required: false)
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">Control Clientes</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="sass.html">Sass</a></li>
+                    <li><a href="badges.html">Components</a></li>
+                    <li><a href="collapsible.html">JavaScript</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="row" style="margin-bottom:0">
+            @RenderBody()
+        </div>
+    </main>
+
+
+
+
+    <!--JS-->
+    <script src="~/Content/js/jquery-3.6.0.min.js"></script>
+    <script src="~/Content/js/materialize.min.js"></script>
+ 
+    @RenderSection("JS", required: false)
+
+</body>
+
+</html>
+
